@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "DEBUG=graphql:* babel-node ./index.js"
+    "start": "DEBUG=graphql:* babel-node ./index.js",
+    "update-schema": "babel-node ./scripts/updateSchema.js"
   },
   "dependencies": {
     "express": "^4.15.2",
