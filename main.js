@@ -1,11 +1,13 @@
 import express from 'express'
 import GraphQLHTTP from 'express-graphql'
+import schema from './schema'
 const debug = require('debug')('graphql:server')
 
 const GRAPHQL_PORT = 8080
 
 const server = express()
 server.use('/', GraphQLHTTP({
+  schema,
   pretty: true,
   graphiql: true
 }))
