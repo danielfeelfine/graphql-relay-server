@@ -2,7 +2,13 @@
   "name": "graphql-relay-server",
   "version": "0.0.0",
   "license": "MIT",
+  "scripts": {
+    "start": "DEBUG=graphql:* babel-node ./index.js"
+  },
   "dependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-core": "^6.24.0",
+    "express": "^4.15.2",
     "graphql": "^0.9.1",
     "graphqlhub-schemas": "^0.1.0"
   },
