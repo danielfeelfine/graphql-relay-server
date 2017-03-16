@@ -9,7 +9,8 @@ const server = express()
 server.use('/', GraphQLHTTP({
   schema,
   pretty: true,
-  graphiql: true
+  graphiql: true,
+  formatError: error => debug(error)
 }))
 
 server.listen(GRAPHQL_PORT, () => debug(
